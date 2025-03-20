@@ -9,6 +9,6 @@ class Solution {
             mon.add(n);
         }
         
-        return mon.size() > nums.length/2? nums.length/2: mon.size();
+        return Math.min(nums.length/2, mon.size());
     }
 }
